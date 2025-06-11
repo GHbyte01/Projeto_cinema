@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva de Ingressos</title>
+  <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cinema - Compra de Ingressos</h1>
+    <p class="info">
+      <strong>Regras:</strong><br>
+      - Crianças de até 10 anos não pagam<br>
+      - Menores de 18 anos devem estar acompanhados pelos pais<br>
+      - Estudantes pagam meia (R$10)<br>
+      - Valor do ingresso: R$20
+    </p>
+
+    <div class="form">
+      <input type="text" id="nome" placeholder="Digite seu nome">
+      <input type="number" id="idade" placeholder="Digite sua idade" min="0">
+      <input type="number" id="quantidade" placeholder="Quantidade de ingressos" min="1">
+      
+      <label><input type="checkbox" id="menor"> Estou acompanhado pelos pais</label>
+      <label><input type="checkbox" id="estudante"> Sou estudante</label>
+      
+      <button onclick="pronto()">Finalizar Compra</button>
+      <p id="resultado"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
